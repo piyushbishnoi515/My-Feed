@@ -10,4 +10,5 @@ const blanckdiv = document.querySelector(".blanck-div");
 
 blanckdiv.addEventListener("click", function () {
     blackbox.classList.toggle("dot-right");
+    blanckdiv.classList.toggle("bg-blue");
 })
