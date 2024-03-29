@@ -295,7 +295,6 @@
 }
 
 .nav {
-    box-shadow: 0px 4px 35px 0px #00000014;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -408,6 +407,8 @@
     position: fixed;
     width: 100%;
     background-color: white;
+    color: white;
+    box-shadow: 0px 4px 35px 0px #00000014;
 }
 
 .inputcard {
@@ -432,7 +433,8 @@
 .inputcard {
     display: none;
 }
-.pb-46{
+
+.pb-46 {
     padding-bottom: 46px;
 }
 
@@ -562,10 +564,12 @@
         background-color: transparent;
         color: #666666;
     }
-        .pb-70 {
-            padding-bottom: 70px;
-        }
-        .form{
-            flex-direction: column;
-        }
+
+    .pb-70 {
+        padding-bottom: 70px;
+    }
+
+    .form {
+        flex-direction: column;
+    }
 }
