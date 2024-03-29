@@ -145,7 +145,7 @@
 }
 
 .pt-50 {
-    padding: 50px;
+    padding-top: 50px;
 }
 
 .follow {
@@ -288,12 +288,45 @@
     justify-content: space-between;
 }
 
+.menuicon {
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+
+.nav {
+    box-shadow: 0px 4px 35px 0px #00000014;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.menulist {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    right: -100%;
+    top: 0;
+    transition: all 300ms linear;
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+}
+
+.showlist {
+    right: 0%;
+}
+
+
 .Filters {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     color: #636363;
+    padding-bottom: 10px;
 }
 
 .col-4 {
@@ -332,7 +365,7 @@
     background-color: #F0F0F0;
     border: 1px solid #00000033;
     position: relative;
-    margin-left: 11px;
+
 
 }
 
@@ -354,8 +387,7 @@
 }
 
 .nav-img {
-    width: 30%;
-    padding-left: 8px;
+    width: 26%;
 }
 
 .pr-14 {
@@ -370,8 +402,10 @@
     display: flex;
 }
 
-.nav-links {
-    display: none;
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
 }
 
 .inputcard {
@@ -382,9 +416,10 @@
     gap: 21px;
 }
 
+/* 
 .lens {
     padding-left: 5px;
-}
+} */
 
 .logo {
     width: 20%;
@@ -392,36 +427,28 @@
 }
 
 
-
+.inputcard {
+    display: none;
+}
+.pb-46{
+    padding-bottom: 46px;
+}
 
 
 
 
 
 @media (min-width:576px) {
-    .lens {
-        display: none;
-    }
-
-    .three-line {
-        display: none;
-    }
-
-    .linksdiv {
-        padding-left: 17px;
-    }
 
     .nav-links {
         display: flex;
     }
 
-    gap-20 {
+    .gap-20 {
         gap: 20px;
     }
 
-    .inputcard {
-        display: flex;
-    }
+
 
     .blanck-div {
         margin-left: 25px;
@@ -432,9 +459,6 @@
         font-size: 36px;
     }
 
-    .maincard {
-        margin-top: 0%;
-    }
 
 
 }
@@ -460,6 +484,10 @@
         padding-right: 12px;
     }
 
+    .menuicon {
+        display: none;
+    }
+
     .f-direction-r-lg {
         flex-direction: row;
     }
@@ -482,4 +510,57 @@
     .w-60 {
         width: 60%;
     }
+
+    .nav-img {
+        width: 8%;
+    }
+
+    .inputcard {
+        display: flex;
+    }
+
+    .lens {
+        display: none;
+    }
+
+    .menulist {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        right: 0%;
+        top: 0;
+        transition: all 300ms linear;
+        background-color: transparent;
+        position: relative;
+        z-index: 2;
+    }
+
+    .three-line {
+        display: none;
+    }
+
+    .both-btn {
+        width: fit-content;
+        height: fit-content;
+        border-radius: 0px;
+        cursor: pointer;
+        background-color: transparent;
+        color: #636363;
+
+    }
+
+    .radio {
+        display: flex;
+    }
+
+    .both-btn:hover {
+        background-color: transparent;
+        color: #666666;
+    }
+        .pb-70 {
+            padding-bottom: 70px;
+        }
 }
