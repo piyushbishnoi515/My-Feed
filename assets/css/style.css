@@ -572,4 +572,9 @@
     .form {
         flex-direction: column;
     }
+
+    .overflow {
+        overflow-x: hidden;
+        padding-bottom: 0px;
+    }
 }
