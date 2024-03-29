@@ -22,6 +22,10 @@
     display: none;
 }
 
+.pt-70 {
+    padding-top: 70px;
+}
+
 .mt-50 {
     margin-top: 50px;
 }
@@ -185,10 +189,11 @@
 
 .Search-2 {
     width: 70%;
-    /* height: 43px; */
-    /* border-radius: 25.5px; */
+    border: none;
     border: 0px;
     padding-left: 14px;
+    outline: none;
+    color: #666666;
 }
 
 .mb-33 {
@@ -452,9 +457,7 @@
         gap: 20px;
     }
 
-
-
-    .blanck-div {
+    .cmn .blanck-div {
         margin-left: 25px;
         margin-right: 25px;
     }
@@ -576,5 +579,9 @@
     .overflow {
         overflow-x: hidden;
         padding-bottom: 0px;
+    }
+
+    .gap-0 {
+        gap: 0px;
     }
 }
